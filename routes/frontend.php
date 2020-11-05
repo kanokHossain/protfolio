@@ -1,8 +1,4 @@
 <?php
-
-use Illuminate\Support\Facades\Route;
-
-
-Route::get('/', function () {
-    return view('welcome');
+Route::group(['namespace' => 'Front'] , function(){
+    Route::get('/','IndexController@index')->name('index');
 });

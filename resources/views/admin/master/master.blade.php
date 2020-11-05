@@ -11,6 +11,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicon.png">
     <title> @yield('title')</title>
     <!-- Custom CSS -->
+    <link href="{{asset('/')}}back_end/editor.css" type="text/css" rel="stylesheet"/>
     <link href="{{asset('/')}}back_end/assets/libs/fullcalendar/dist/fullcalendar.min.css" rel="stylesheet" />
     <link href="{{asset('/')}}back_end/assets/extra-libs/calendar/calendar.css" rel="stylesheet" />
     <link href="{{asset('/')}}back_end/dist/css/style.min.css" rel="stylesheet">
@@ -62,6 +63,8 @@
 <!-- slimscrollbar scrollbar JavaScript -->
 <script src="{{asset('/')}}back_end/assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
 <script src="{{asset('/')}}back_end/assets/extra-libs/sparkline/sparkline.js"></script>
+<script src="{{asset('/')}}back_end/editor.js"></script>
+<script src="https://cdn.ckeditor.com/ckeditor5/23.1.0/classic/ckeditor.js"></script>
 <!--Wave Effects -->
 <script src="{{asset('/')}}back_end/dist/js/waves.js"></script>
 <!--Menu sidebar -->
@@ -72,6 +75,17 @@
 <script src="{{asset('/')}}back_end/assets/libs/moment/min/moment.min.js"></script>
 <script src="../../assets/libs/fullcalendar/dist/fullcalendar.min.js"></script>
 <script src="{{asset('/')}}back_end/dist/js/pages/calendar/cal-init.js"></script>
+<script type="text/javascript">
+    $(document).ready( function() {
+        ClassicEditor.create( document.querySelector( '#editor' ) )
+        .then( editor => {
+                console.log( editor );
+        } )
+        .catch( error => {
+                console.error( error );
+        } );                   
+    });
+</script>
 
 </body>
 

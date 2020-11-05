@@ -9,8 +9,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="{{asset('/')}}back_end/assets/images/favicon.png">
-    <title>Matrix Template - The Ultimate Multipurpose admin template</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="">
+    <title>Md Kanok Hossain || ADMIN</title>
     <!-- Custom CSS -->
     <link href="{{asset('/')}}back_end/dist/css/style.min.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -42,7 +42,7 @@
         <div class="auth-box bg-dark border-top border-secondary">
             <div id="loginform">
                 <div class="text-center p-t-20 p-b-20">
-                    <span class="db"><h1><span style="font-family: monospace">PRO EDGE</span></h1></span>
+                    <span class="db"><h1><span style="font-family: monospace">ADMIN || LOG IN</span></h1></span>
                 </div>
                 <!-- Form -->
                 <form method="post" class="form-horizontal m-t-20" id="loginform" action="{{ route('admin.login') }}">

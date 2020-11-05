@@ -11,7 +11,7 @@ class AdminsTableSeeder extends Seeder
      */
     public function run()
     {
-        $super_admin_email= 'admin@proedge.com';
+        $super_admin_email= 'admin@kanok.com';
         $super_admin_password=  bcrypt('123456');
         $allData = \App\Model\Admin\Admin::get();
 
@@ -23,8 +23,6 @@ class AdminsTableSeeder extends Seeder
                 'password' => $super_admin_password,
                 'status'     => '1',
                 'user_role'     => '0',
-                'updated_at'     => '',
-                'created_at'     => '',
             ]);
             $admin->save();
         }
