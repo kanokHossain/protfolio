@@ -46,7 +46,7 @@
                                 <tr>
                                     <td>{{$loop->index+1 }} </td>
                                     <td>{{$list->title}} </td>
-                                    <td>{{$list->description}} TK</td>
+                                    <td>{{$list->description}}</td>
                                     <td class="action">
                                         <a href="{{route('admin.work.edit',$list->id)}}" type="button" class="btn btn-success"><i class="fas fa-edit"></i></a>
                                         <a  href="{{route('admin.work.delete',$list->id)}}"type="button" class="btn btn-danger"><i class="far fa-trash-alt"></i></a>
