@@ -249,9 +249,6 @@
 									<p><span style="font-family: 'Trebuchet MS', Helvetica, sans-serif;">User access control base on role (ACL).</span></p>
 									<p><span style="font-family: 'Trebuchet MS', Helvetica, sans-serif;">Use database transaction for safe data storage in multiple dependend table.</span></p>
 									<p><span style="font-family: 'Trebuchet MS', Helvetica, sans-serif;">SRS Base Application development and modification.</span></p>
-									<p><span style="font-family: 'Trebuchet MS', Helvetica, sans-serif;">Designing and implementing Applicaton Flow.</span></p>
-									<p><span style="font-family: 'Trebuchet MS', Helvetica, sans-serif;">Participating in all phases of the software development cycle.</span></p>
-																
 								</div>
 							</div>
 							<div class="col-md-4">
@@ -282,9 +279,6 @@
 									<p><span style="font-family: 'Trebuchet MS', Helvetica, sans-serif;">User access control base on role (ACL).</span></p>
 									<p><span style="font-family: 'Trebuchet MS', Helvetica, sans-serif;">Use database transaction for safe data storage in multiple dependend table.</span></p>
 									<p><span style="font-family: 'Trebuchet MS', Helvetica, sans-serif;">SRS Base Application development and modification.</span></p>
-									<p><span style="font-family: 'Trebuchet MS', Helvetica, sans-serif;">Designing and implementing Applicaton Flow.</span></p>
-									<p><span style="font-family: 'Trebuchet MS', Helvetica, sans-serif;">Participating in all phases of the software development cycle.</span></p>
-									<p><span style="font-family: 'Trebuchet MS', Helvetica, sans-serif;">Supporting existing software products and making progress on new products.</span></p>
 								</div>
 							</div>
 						</div>
