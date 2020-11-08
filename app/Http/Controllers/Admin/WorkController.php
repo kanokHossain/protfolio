@@ -31,7 +31,7 @@ class WorkController extends Controller
         $work = Work::find($request->id);
         if ($request->file('image_url')){  
             if($work->photo_url!='/assets/default.png'){
-                unlink('storage/' . $work->photo_url);
+                unlink($work->photo_url);
                 $file = $this->workImageUpload($request);
             }else{
                 $file = $this->workImageUpload($request);
@@ -50,11 +50,14 @@ class WorkController extends Controller
     protected function workImageUpload($request){
         $date = Carbon::now()->toDateTimeString();
         $dt=str_replace([':', '\\', '/', ' ','*'], '', $date);
+        $directory = 'work-images/';
         if ($request->file('image_url')) {  
             $extension = $request->file('image_url')->extension();
-            return $file = $request->file('image_url')->storeAs(
-                'work-image', 'work_'.$request->title.$dt.'.'.$extension
-            );
+            // return $file = $request->file('image_url')->storeAs(
+            //     'work-image', 'work_'.$request->title.$dt.'.'.$extension
+            // );
+            return $file = $request->file('image_url')->move($directory, 'work_'.$request->title.$dt.'.'.$extension);
+          
         }else{
             return $file='/assets/default.png';
         }

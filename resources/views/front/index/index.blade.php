@@ -248,7 +248,7 @@
 										<p class="title">PHP</p>
 									</div>
 									<div class="col-xs-12 success heading-b banner-cell">
-										EXPERT
+										EXPERIENCED
 										<br /> 
 									</div>
 								</div>
@@ -272,7 +272,7 @@
 										<p class="title">Framework</p>
 									</div>
 									<div class="col-xs-12 info heading-d banner-cell">
-										EXPERT
+										EXPERIENCED
 										<br /> 
 									</div>
 								</div>
@@ -699,9 +699,6 @@
 						<div class="row">
 							<div class="col-md-6">
 								<div class="text-right scroll-in-animation" data-animation="fadeInLeft">
-									<p class="big-font uppercase">
-										Tel: <strong class="highlight font">+01521254239</strong>
-									</p>
 									<p class="big-font uppercase">
 										Mohammadpur, 
 										<br/> Dhaka, Bangladesh, Dhaka-1207

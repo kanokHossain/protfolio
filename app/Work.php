@@ -16,11 +16,7 @@ class Work extends Model
         if ($this->photo_url == NULL) {
             return null;
         } else {
-            if (strpos($this->photo_url, "default") !== false||strpos($this->photo_url, "http") !== false) {
-                return $this->photo_url;
-            } else {
-                return asset('/storage/' . $this->photo_url);
-            }
+            return asset('/' . $this->photo_url);
         }
     }
 }
