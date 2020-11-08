@@ -16,9 +16,12 @@
         Route::post('save-work', 'WorkController@saveWork')->name('admin.work.save');
         Route::post('update-work', 'WorkController@updateWork')->name('admin.work.update');
         Route::get('delete-work/{id}', 'WorkController@deleteWork')->name('admin.work.delete');
+        Route::get('admin-contacts', 'ContactController@manageContact')->name('admin.contacts');
     });
     Route::get('work-details',[
         'uses' => 'Front\IndexController@workDetails',
         'as' => 'admin/work/details'
     ]);
+    
+    
 

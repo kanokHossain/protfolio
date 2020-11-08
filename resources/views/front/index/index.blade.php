@@ -16,7 +16,7 @@
 		<link rel="stylesheet" href="{{asset('/')}}front-end/lib/linecons/style.css" />
 		<link rel="stylesheet" href="{{asset('/')}}front-end/styles/style.min.css" />
 		<link rel="stylesheet" href="{{asset('/')}}front-end/theme-custom.css" />
-		<link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTlfS3WDQ639jXrbXMJNot5wEj8LBOe9Zy8Ew&usqp=CAU" type="image/x-icon" />
+		<link rel="shortcut icon" href="{{asset('/')}}front-end/favicon-icon.jpg" type="image/x-icon" />
 		<link rel="apple-touch-icon" href="apple-touch-icon.png" />
 		<link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png" />
 		<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png" />
@@ -28,6 +28,60 @@
 		<style>
 			.font{
 				font-family: fantasy;
+			}
+			.ring-container {
+				position: relative;
+			}
+
+			.w {
+				width: 15px;
+				height: 15px;
+				background-color: #62bd19;
+				border-radius: 50%;
+				position: absolute;
+			}
+			.w{
+				margin:0%;
+			}
+
+			.ringring {
+				border: 3px solid #62bd19;
+				-webkit-border-radius: 30px;
+				height: 25px;
+				width: 25px;
+				position: absolute;
+				-webkit-animation: pulsate 1s ease-out;
+				-webkit-animation-iteration-count: infinite; 
+				opacity: 0.0
+			}
+			@-webkit-keyframes pulsate {
+				0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
+				50% {opacity: 1.0;}
+				100% {-webkit-transform: scale(1.2, 1.2); opacity: 0.0;}
+			}
+			
+			.losange, .losange div {
+			margin: 0 auto;
+			transform-origin: 50% 50%;
+			overflow: hidden;
+			width: 100px;
+			height: 100px;
+			}
+			.losange {
+			transform: rotate(45deg) translateY(10px);
+			}
+			.losange .los1 {
+			width: 255px;
+			height: 255px;
+			transform: rotate(-45deg) translateY(-74px);
+			}
+			.losange .los1 .bg-img {
+			width: 50%;
+			height: auto;
+			background-image: url('{{asset('/')}}front-end/profile-photo.jpg');
+			height: 50%;
+			background-size: cover;
+			background-position: top;
 			}
 		</style>
 	</head>
@@ -54,7 +108,7 @@
 			<ul>
 				<li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
 				<li><a href="http://www.youtube.com/" target="_blank"><i class="fa fa-youtube"></i></a></li>
-				<li><a href="http://www.skype.com/" target="_blank"><i class="fa fa-skype"></i></a></li>
+				<li><a target="blank" href="https://www.fiverr.com/developer_kanok?up_rollout=true" target="_blank"><i> FI</i></a></li>
 			</ul>
 		</div>
 		<!-- BEGIN: Top menu -->
@@ -62,7 +116,7 @@
 		<nav class="navbar navbar-default navbar-fixed-top page-transition colors-e background-solid" role="navigation" id="top-nav">
 			<div class="container">
 				<div class="navbar-header">
-					<a class="menu-toggle ext-nav-toggle visible-xs-block" data-target=".ext-nav" href="#"><span></span></a>
+					<!--<a class="menu-toggle ext-nav-toggle visible-xs-block" data-target=".ext-nav" href="#"><span></span></a>-->
 					<a class="menu-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" href="#"><span></span></a>
 					<a class="navbar-brand" href="">MD KANOK<span class="highlight"> HOSSAIN</span></a>
 				</div>
@@ -75,7 +129,9 @@
 						<li><a href="#process" class="hover-effect">Process</a></li>
 						<li><a href="#skills" class="hover-effect">Skills</a></li>
 						<li><a href="#contact" class="hover-effect">Contact</a></li>
+						<!--
 						<li class="hidden-xs"><a class="menu-toggle ext-nav-toggle" data-target=".ext-nav" href="#"><span></span></a></li>
+						-->
 					</ul>
 				</div>
 			</div>
@@ -170,9 +226,9 @@
 						<div class="row">
 							<div class="col-md-8 col-md-offset-2">
 								<p class="lead text-center">
-									I'm a professional software developer with +2 Years experience.
+									I'M A PROFESSIONAL SOFTWARE DEVELOPER WITH +2 YEARS EXPERIENCED.
 								</p>
-								<p class="text-center"><a href="#about" class="button background-60-d heading-d border-hard">About Me</a><a href="#work" class="button background-60-f heading-f border-hard">My Work</a></p>
+								<p class="text-center"><a href="#about" class="button background-60-d heading-d border-hard">About Me</a><a href="#work" class="button background-60-f heading-f border-hard">My Work</a><a target="blank" href="https://www.fiverr.com/developer_kanok?up_rollout=true" class="button background-60-f heading-f border-hard">HIRE ME AT FIVERR</a></p>
 							</div>
 						</div>
 					</div>
@@ -181,7 +237,7 @@
 		</section>
 		<section id="about">
 			<div class="view">
-				<img alt class="bg" src="{{asset('/')}}front-end/images/placeholders/1920x1200-1.jpg" />
+				<!-- <img alt class="bg" src="{{asset('/')}}front-end/images/placeholders/1920x1200-1.jpg" /> -->
 				<div class="content pane">
 					<div class="container-fluid">
 						<div class="row hidden-xs hidden-sm">
@@ -241,14 +297,16 @@
 									<i class="fa fa-suitcase"></i>
 								</div>
 								<div class="col-content">
-									<h4><span class="">Dhrubok Infotech Services Ltd.</span></h4>
+									<h4><span class="">Dhrubok Infotech Services Ltd.</span>
+										<span class="circle w ringring" ></span>
+									</h4>
 									<h6>Software<span class="highlight"> Engineer</span></h6>
 									<p class="font"><span class="highlight">SEPTEMBER 23, 2020 - PRESENT</span></p>
 									<p class="font"><span class="highlight fa fa-map-marker"></span> 4th Floor, Khan Niketon, 9/2 Ring Road, Dhaka 1207</p>
-									<p><span style="font-family: 'Trebuchet MS', Helvetica, sans-serif;">Developing software in PHP (Framework:Laravel ) and MySQL Database.</span></p>
-									<p><span style="font-family: 'Trebuchet MS', Helvetica, sans-serif;">User access control base on role (ACL).</span></p>
-									<p><span style="font-family: 'Trebuchet MS', Helvetica, sans-serif;">Use database transaction for safe data storage in multiple dependend table.</span></p>
-									<p><span style="font-family: 'Trebuchet MS', Helvetica, sans-serif;">SRS Base Application development and modification.</span></p>
+									<p><span class="work">Developing software in PHP (Framework:Laravel ) and MySQL Database.</span></p>
+									<p><span class="work">User access control base on role (ACL).</span></p>
+									<p><span class="work">Use database transaction for safe data storage in multiple dependend table.</span></p>
+									<p><span class="work">SRS Base Application development and modification.</span></p>
 								</div>
 							</div>
 							<div class="col-md-4">
@@ -260,10 +318,10 @@
 									<h6>Web<span class="highlight"> Developer</span></h6>
 									<p class="font"><span class="highlight">DECEMBER 15, 2019 - SEPTEMBER 23, 2020</span></p>
 									<p class="font"><span class="highlight fa fa-map-marker"></span> H#260, Malibag, Dhaka-1217 ,Dhaka</p>								
-									<p><span style='font-family: "Trebuchet MS", Helvetica, sans-serif;'>Developing software in PHP (Framework: CodeIgniter, laravel) and MySQL Database &amp; VUE js</span></p>
-									<p><span style="font-family: 'Trebuchet MS', Helvetica, sans-serif;">Use database transaction for safe data storage in multiple dependend table.</span></p>
-									<p><span style="font-family: 'Trebuchet MS', Helvetica, sans-serif;">SRS Base Application development and modification.</span></p>
-									<p><span style='font-family: "Trebuchet MS", Helvetica, sans-serif;'>Supporting existing software products and making progress on new products.</span></p>		
+									<p><span class="work">Developing software in PHP (Framework: CodeIgniter, laravel) and MySQL Database &amp; VUE js</span></p>
+									<p><span class="work">Use database transaction for safe data storage in multiple dependend table.</span></p>
+									<p><span class="work">SRS Base Application development and modification.</span></p>
+									<p><span class="work">Supporting existing software products and making progress on new products.</span></p>		
 								</div>
 							</div>
 							<div class="col-md-4">
@@ -275,10 +333,10 @@
 									<h6>Laravel<span class="highlight"> Developer</span></h6>
 									<p class="font"><span class="highlight">NOVEMBER 2018- DECEMBER 15, 2019</span></p>
 									<p class="font"><span class="highlight fa fa-map-marker"></span> R#30,H#436,Mohakhali DOHS,Dhaka</p>
-									<p><span style="font-family: 'Trebuchet MS', Helvetica, sans-serif;">Developing software in PHP (Framework:Laravel ) and MySQL Database, Vue Js.</span></p>
-									<p><span style="font-family: 'Trebuchet MS', Helvetica, sans-serif;">User access control base on role (ACL).</span></p>
-									<p><span style="font-family: 'Trebuchet MS', Helvetica, sans-serif;">Use database transaction for safe data storage in multiple dependend table.</span></p>
-									<p><span style="font-family: 'Trebuchet MS', Helvetica, sans-serif;">SRS Base Application development and modification.</span></p>
+									<p><span class="work">Developing software in PHP (Framework:Laravel ) and MySQL Database, Vue Js.</span></p>
+									<p><span class="work">User access control base on role (ACL).</span></p>
+									<p><span class="work">Use database transaction for safe data storage in multiple dependend table.</span></p>
+									<p><span class="work">SRS Base Application development and modification.</span></p>
 								</div>
 							</div>
 						</div>
@@ -406,7 +464,9 @@
 				</div>
 			</div>
 			<div class="view">
+				<!--
 				<img alt class="bg" src="{{asset('/')}}front-end/images/placeholders/1920x1200-2.jpg" /><img alt class="bg" src="{{asset('/')}}front-end/images/placeholders/1920x1200-0.jpg" /><img alt class="bg" src="{{asset('/')}}front-end/images/placeholders/1920x1200-1.jpg" />
+				-->
 				<div class="content half-size colors-h">
 					<div class="container">
 						<div class="show-list slogan">
@@ -425,7 +485,9 @@
 		</section>
 		<section id="work">
 			<div class="view">
+				<!--
 				<img alt class="bg" src="{{asset('/')}}front-end/images/placeholders/1920x1200-2.jpg" /><img alt class="bg" src="{{asset('/')}}front-end/images/placeholders/1920x1200-0.jpg" />
+				-->
 				<div class="content no-bottom-padding colors-e">
 					<div class="container">
 						<h2>My <span class="highlight">Work</span></h2>
@@ -573,6 +635,11 @@
 							</div>
 						-->
 							<div class="col-md-4">
+								<div class="losange">
+									<div class="los1">
+									  <div class="bg-img"></div>
+									</div>
+								</div>
 								<p class="header-details"><span class="highlight">Who's this</span> guy?</p>
 								<div style="color: rgb(97, 97, 97); font-family: Raleway; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">I&apos;m a Software Enginner for&nbsp;<a class="highlight" href="" style="color: rgb(0, 154, 218); text-decoration: none;" target="_blank">Dhrubok Infotech</a> in Dhaka, Bangladesh.<br>I have serious passion for web development.<br><span class="page-link highlight" style="cursor: pointer; color: rgb(0, 154, 218);">Let&apos;s make something special.</span></div>
 							</div>
@@ -622,7 +689,9 @@
 		</section>
 		<section id="contact">
 			<div class="view">
+				<!--
 				<img alt class="bg" src="{{asset('/')}}front-end/images/placeholders/1920x1200-2.jpg" /><img alt class="bg" src="{{asset('/')}}front-end/images/placeholders/1920x1200-0.jpg" /><img alt class="bg" src="{{asset('/')}}front-end/images/placeholders/1920x1200-1.jpg" />
+				-->
 				<div class="content full-size colors-h">
 					<div class="container">
 						<h2>Contact</h2>
@@ -640,32 +709,33 @@
 									<p class="big-font">
 									<b>
 										<a href="mailto:kanokhossain.developer.786@gmail.com">kanokhossain.developer.786@gmail.com</a><br/>
-										<a target="blank" class="font highlight" href="https://www.fiverr.com/developer_kanok?up_rollout=true">Find Me At Fiver</a>
 									</b>
 									</p>
 									<p class="big-font">
 										<a target="_blank" href="https://www.facebook.com/"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x heading"></i><i class="fa fa-linkedin fa-stack-1x text-background"></i></span></a>
 										<a target="_blank" href="http://www.youtube.com/"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x heading"></i><i class="fa fa-youtube fa-stack-1x text-background"></i></span></a>
+										<a target="_blank" href="http://www.youtube.com/"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x heading"></i><i class="fa-stack-1x text-background">FI</i></span></a>
 									</p>
 								</div>
 							</div>
 							<div class="col-md-6">
 								<div class="text-left scroll-in-animation" data-animation="fadeInRight">
-									<form class="ajax-form" data-message-class="colors-d background-95 heading border" action="contact.php" method="post" novalidate="novalidate">
+									<form  data-message-class="colors-d background-95 heading border" action="{{route('contact.us')}}" method="post">
+										@csrf	
 										<div class="row">
 											<div class="col-md-6 control-group">
 												<div class="alt-placeholder">Name</div>
-												<input type="text" name="your-name" value="" size="40" placeholder="Name" data-validation-required-message="Please fill the required field." required>
+												<input type="text" name="your_name" value="" size="40" placeholder="Name" data-validation-required-message="Please fill the required field." required>
 												<div class="help-block"></div>
 											</div>
 											<div class="col-md-6 control-group">
 												<div class="alt-placeholder">Email</div>
-												<input type="email" name="your-email" value="" size="40" placeholder="Email" data-validation-required-message="Please fill the required field." required>
+												<input type="email" name="your_email" value="" size="40" placeholder="Email" data-validation-required-message="Please fill the required field." required>
 												<div class="help-block"></div>
 											</div>
 											<div class="col-md-12 control-group">
 												<div class="alt-placeholder">Message</div>
-												<textarea name="your-message" placeholder="Message" data-validation-required-message="Please fill the required field." required></textarea>
+												<textarea name="your_message" placeholder="Message" data-validation-required-message="Please fill the required field." required></textarea>
 												<div class="help-block"></div>
 											</div>
 											<div class="col-md-12 form-actions">
@@ -688,22 +758,23 @@
 		<footer class="colors-g page-transition non-preloading">
 			<div class="container scroll-in-animation" data-animation="fadeInDown">
 				<div class="row">
-					<div class="col-md-4">
+					<div class="col-md-6">
 						<h4>FIND<span class="highlight">KANOK</span></h4>
 						<p class="social-links">
 							<a target="_blank" href="http://www.youtube.com/"><i class="fa fa-youtube"></i></a>
 							<a target="_blank" href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+							<a target="_blank" href="https://www.fiverr.com/developer_kanok?up_rollout=true"><i>FI</i></a>
 						</p>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-6">
 						<h5>Additional Links</h5>
 						<ul class="simple">
-							<li><a href="blog.html">Blog</a></li>
-							<li><a href="#how-we-work">How We Work</a></li>
-							<li><a href="#who-we-are">Who We Are</a></li>
-							<li><a href="#numbers">Our Numbers</a></li>
+							<li><a href="#how-we-work">How I Work</a></li>
+							<li><a href="#who-we-are">Who I AM</a></li>
+							<li><a href="#numbers">MY Numbers</a></li>
 						</ul>
 					</div>
+					<!--
 					<div class="col-md-4">
 						<h5>Recent Posts</h5>
 						<ul class="simple">
@@ -714,10 +785,11 @@
 							<li><a href="blog.html">More...</a></li>
 						</ul>
 					</div>
+					-->
 				</div>
 			</div>
 			<div class="bottom text-center background-10-b">
-				Md Kanok Hossain© 2020 All Rights Reserved. <a href="#" class="open-overlay-window heading" data-overlay-window=".credits-overlay">Credits.</a>
+				Md Kanok Hossain© 2020 All Rights Reserved.
 			</div>
 		</footer>
 		<!-- END: Footer -->
@@ -748,6 +820,16 @@
 		<script src="{{asset('/')}}front-end/bower_components/textillate/jquery.textillate.js"></script>
 		<script src="{{asset('/')}}front-end/lib/prism/prism.js"></script>
 		<script>
+		@if(session()->get('success'))
+        var message= "{{ session()->get('success') }}";
+        swal({
+            title: "Success",
+            text: message,
+            html: true,
+            icon:'success',
+            timer:1500
+        });
+    	@endif
 		(function()
 		{
 			var disableMobileAnimations = true;

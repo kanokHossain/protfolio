@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'AdminsTableSeeder' => $baseDir . '/database/seeds/AdminsTableSeeder.php',
+    'App\\Classes\\CommonClass' => $baseDir . '/app/Classes/CommonClass.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
     'App\\Http\\Controllers\\Admin\\Auth\\ConfirmPasswordController' => $baseDir . '/app/Http/Controllers/Admin/Auth/ConfirmPasswordController.php',
@@ -15,6 +16,7 @@ return array(
     'App\\Http\\Controllers\\Admin\\Auth\\RegisterController' => $baseDir . '/app/Http/Controllers/Admin/Auth/RegisterController.php',
     'App\\Http\\Controllers\\Admin\\Auth\\ResetPasswordController' => $baseDir . '/app/Http/Controllers/Admin/Auth/ResetPasswordController.php',
     'App\\Http\\Controllers\\Admin\\Auth\\VerificationController' => $baseDir . '/app/Http/Controllers/Admin/Auth/VerificationController.php',
+    'App\\Http\\Controllers\\Admin\\ContactController' => $baseDir . '/app/Http/Controllers/Admin/ContactController.php',
     'App\\Http\\Controllers\\Admin\\WorkController' => $baseDir . '/app/Http/Controllers/Admin/WorkController.php',
     'App\\Http\\Controllers\\Auth\\ConfirmPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ConfirmPasswordController.php',
     'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
@@ -38,6 +40,7 @@ return array(
     'App\\Http\\Middleware\\VerifyCsrfToken' => $baseDir . '/app/Http/Middleware/VerifyCsrfToken.php',
     'App\\Http\\Middleware\\isAdminCheck' => $baseDir . '/app/Http/Middleware/isAdminCheck.php',
     'App\\Model\\Admin\\Admin' => $baseDir . '/app/Model/Admin/Admin.php',
+    'App\\Model\\Admin\\ContactUs' => $baseDir . '/app/Model/Admin/ContactUs.php',
     'App\\Providers\\AppServiceProvider' => $baseDir . '/app/Providers/AppServiceProvider.php',
     'App\\Providers\\AuthServiceProvider' => $baseDir . '/app/Providers/AuthServiceProvider.php',
     'App\\Providers\\BroadcastServiceProvider' => $baseDir . '/app/Providers/BroadcastServiceProvider.php',

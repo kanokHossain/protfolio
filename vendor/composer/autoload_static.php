@@ -497,6 +497,7 @@ class ComposerStaticInitf28b4eea6340beb40106fcc5023573fa
 
     public static $classMap = array (
         'AdminsTableSeeder' => __DIR__ . '/../..' . '/database/seeds/AdminsTableSeeder.php',
+        'App\\Classes\\CommonClass' => __DIR__ . '/../..' . '/app/Classes/CommonClass.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Admin\\Auth\\ConfirmPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/Auth/ConfirmPasswordController.php',
@@ -505,6 +506,7 @@ class ComposerStaticInitf28b4eea6340beb40106fcc5023573fa
         'App\\Http\\Controllers\\Admin\\Auth\\RegisterController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/Auth/RegisterController.php',
         'App\\Http\\Controllers\\Admin\\Auth\\ResetPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/Auth/ResetPasswordController.php',
         'App\\Http\\Controllers\\Admin\\Auth\\VerificationController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/Auth/VerificationController.php',
+        'App\\Http\\Controllers\\Admin\\ContactController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/ContactController.php',
         'App\\Http\\Controllers\\Admin\\WorkController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/WorkController.php',
         'App\\Http\\Controllers\\Auth\\ConfirmPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ConfirmPasswordController.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
@@ -528,6 +530,7 @@ class ComposerStaticInitf28b4eea6340beb40106fcc5023573fa
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
         'App\\Http\\Middleware\\isAdminCheck' => __DIR__ . '/../..' . '/app/Http/Middleware/isAdminCheck.php',
         'App\\Model\\Admin\\Admin' => __DIR__ . '/../..' . '/app/Model/Admin/Admin.php',
+        'App\\Model\\Admin\\ContactUs' => __DIR__ . '/../..' . '/app/Model/Admin/ContactUs.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
