@@ -64,4 +64,5 @@ class WorkController extends Controller
         Work::find($id)->delete();
         return redirect()->route('admin.manage.works')->with('success', config('messages.2'));
     }
+    
 }

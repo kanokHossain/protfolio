@@ -88,7 +88,7 @@
 				<a class="next" href="#"></a>
 				<a class="cross" href="#"></a>
 			</div>
-			<div class="overlay-view">ry7tryty</div>
+			<div class="overlay-view" id="work-details"></div>
 			<ul class="loader">
 				<li class="background-100-d"></li>
 				<li class="background-100-d"></li>
@@ -442,18 +442,19 @@
 							</div>
 							<div class="row">
 								<div class="grid">
+                                    @foreach($works as $key=>$row)
 									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["web"]'>
-                                    <a href="#" class="hover-overlay">
-											<img alt="Project 1" src="{{asset('/')}}front-end/images/placeholders/500x400-1.jpg" />
+                                    <a onclick="handleClick({{$row->id}})" class="hover-overlay">
+											<img height="500px" width="400px" alt="Project 1" src="{{$row->image_url}}" />
 											<div class="overlay background-90-e">
 												<div class="hidden-xs">
-													<p class="title heading-e">Image</p>
-													<p class="text-center heading-e"><strong>Excepteur sint lorem ipsum dolor sit amet consectetur.</strong></p>
-													<p class="text-center"><i class="fa fa-picture-o heading-e"></i></p>
+													<p class="text-center heading-e"><strong>{{$row->title}}.</strong></p>
+													<p class="text-center"><i class="fa fa-link heading-e"></i></p>
 												</div>
 											</div>
 										</a>
 									</div>
+									@endforeach
 								</div>
 							</div>
 						</div>
@@ -788,6 +789,18 @@
 		if (!!navigator.userAgent.match(/Trident.*rv\:11\./))
 		{
 			$('html').addClass('ie11');
+		}
+		function handleClick($id){
+			$.ajax({
+				url: "{{route('admin/work/details')}}",
+				type: "get",
+				data : {id:$id},
+				success: function (data){
+					console.log(data);
+					$("#work-details").html("");
+					$("#work-details").html(data);
+				},
+			});
 		}
 		</script>
 	</body>

@@ -17,4 +17,8 @@
         Route::post('update-work', 'WorkController@updateWork')->name('admin.work.update');
         Route::get('delete-work/{id}', 'WorkController@deleteWork')->name('admin.work.delete');
     });
+    Route::get('work-details',[
+        'uses' => 'Front\IndexController@workDetails',
+        'as' => 'admin/work/details'
+    ]);
 
