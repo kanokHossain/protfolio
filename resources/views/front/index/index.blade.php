@@ -287,7 +287,7 @@
 					<div class="container">
 						<h2>About</h2>
 						<p class="header-details"><span class="highlight">I Create</span> Awesome Stuff</p>
-						<p class="lead">I'm a Software developer with<span class="highlight"> +2 Years experience</span>. I am expert in HTML , CSS, Bootstrap, Javascript, Jquery, React js, Vue js and php framework (Laravel, CodeIgniter). i would like to help you to make web software. I always make sure my clients are satisfied with the work i do. lastly, I take a great pride in my prompt and professional communication. I would love to discuss the job with you further and hope here from you soon.
+						<p class="lead">I'm a Software developer with<span class="highlight"> +2 Years experienced</span>. I am expert in React js, Vue js and php framework (Laravel, CodeIgniter). i would like to help you to make web software. I always make sure my clients are satisfied with the work i do. lastly, I take a great pride in my prompt and professional communication. I would love to discuss the job with you further and hope here from you soon.
 						</p>
 						<!-- new line add-->
 						<h5 class="header-details"><span class="highlight">Professional</span> Experience</h5>
