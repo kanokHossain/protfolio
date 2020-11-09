@@ -88,7 +88,9 @@
 	<body class="state1 background-100-e">
 		<div class="ext-nav background-95-h page-transition">
 			<div class="view half-height">
+				<!--
 				<img alt class="bg static" src="{{asset('/')}}front-end/images/placeholders/1920x1200-2.jpg" />
+				-->
 				<div class="content no-top-padding no-bottom-padding  full-height">
 					<div class="container-fluid  full-height">
 						<div class="row full-height">
@@ -282,7 +284,9 @@
 				</div>
 			</div>
 			<div class="view">
+				<!--
 				<img alt class="bg" src="{{asset('/')}}front-end/images/placeholders/1920x1200-2.jpg" /><img alt class="bg" src="{{asset('/')}}front-end/images/placeholders/1920x1200-0.jpg" />
+				-->
 				<div class="content colors-e">
 					<div class="container">
 						<h2>About</h2>
@@ -526,7 +530,9 @@
 		</section>
 		<section id="process">
 			<div class="view">
+				<!--
 				<img alt class="bg" src="{{asset('/')}}front-end/images/placeholders/1920x1200-1.jpg" /><img alt class="bg" src="{{asset('/')}}front-end/images/placeholders/1920x1200-2.jpg" />
+				-->
 				<div class="content colors-e">
 					<div class="container">
 						<h2>MY <span class="highlight">Process</span></h2>
@@ -592,7 +598,9 @@
 		</section>
 		<section id="skills">
 			<div class="view">
+				<!--
 				<img alt class="bg" src="{{asset('/')}}front-end/images/placeholders/1920x1200-0.jpg" /><img alt class="bg" src="{{asset('/')}}front-end/images/placeholders/1920x1200-1.jpg" />
+				-->
 				<div class="content colors-e">
 					<div class="container">
 						<h2>My <span class="highlight">Skills</span></h2>
