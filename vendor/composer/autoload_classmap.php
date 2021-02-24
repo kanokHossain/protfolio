@@ -8,6 +8,7 @@ $baseDir = dirname($vendorDir);
 return array(
     'AdminsTableSeeder' => $baseDir . '/database/seeds/AdminsTableSeeder.php',
     'App\\Classes\\CommonClass' => $baseDir . '/app/Classes/CommonClass.php',
+    'App\\Collection' => $baseDir . '/app/Collection.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
     'App\\Http\\Controllers\\Admin\\Auth\\ConfirmPasswordController' => $baseDir . '/app/Http/Controllers/Admin/Auth/ConfirmPasswordController.php',
